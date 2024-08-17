@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontfamily: {
+                    'sans': ['ui-sans-serif', 'system-ui'],
+                    'serif': ['ui-serif', 'Georgia'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                }
+            }
+        }
+    </script>
     <title>Typography</title>
 </head>
+
 <body>
     <!-- Font Family -->
-     <div class="font-sans">Tailwind is Awesome</div>
-     <div class="font-serif">Tailwind is Awesome</div>
-     <div class="font-mono">Tailwind is Awesome</div>
+    <div class="font-sans">Tailwind is Awesome</div>
+    <div class="font-serif">Tailwind is Awesome</div>
+    <div class="font-mono">Tailwind is Awesome</div>
+
+    <!-- Font Size -->
+    <div class="text-xs">Some Random Text</div>
+    <div class="text-sm">Some Random Text</div>
+    <div class="text-base">Some Random Text</div>
+    <div class="text-lg">Some Random Text</div>
+    <div class="text-xl">Some Random Text</div>
+    <div class="text-2xl">Some Random Text</div>
+    
+    <!-- Font Weight -->
+    <div class="font-light">Some Random Text</div>
+    <div class="font-normal">Some Random Text</div>
+    <div class="font-medium">Some Random Text</div>
+    <div class="font-semibold">Some Random Text</div>
+    <div class="font-bold">Some Random Text</div>
+    
+    <!-- Letter Spacing -->
+    <div class="tracking-tight">This is sample text</div>
+    <div class="tracking-normal">This is sample text</div>
+    <div class="tracking-wide">This is sample text</div>
+    <!-- Text Alignment -->
+    <div class="text-left">This is sample text</div>
+    <div class="text-right">This is sample text</div>
+    <div class="text-center">This is sample text</div>
+
+    <!-- Text Decoration, style, offset -->
+    <div class="underline decoration-4 decoration-blue-400">Some Text</div>
+    <div class="underline decoration-dotted">Some Text</div>
+    <div class="underline decoration-double">Some Text</div>
+    <div class="underline decoration-dashed">Some Text</div>
+    <div class="underline decoration-4 decoration-blue-400 underline-offset-4">Some Text</div>
+    
+    <!-- Text Transform -->
+    <p class="uppercase">This is all uppercase</p>    
+    <p class="normal-case">This is all normal</p>
+    <p class="lowercase">This is all LOWECASE</p>
+    <p class="capitalize">this is all capitalize</p>
 </body>
+
 </html>

@@ -79,3 +79,63 @@ There are basically three main font family that we can use using tailwindcss but
 <div class="font-serif">Tailwind is Awesome</div>
 <div class="font-mono">Tailwind is Awesome</div>
 ```
+To config new fonts we can use script tag and pass this:
+```
+<script>
+        tailwind.config = {
+            theme:{
+                fontfamily: {
+                    'sans': ['ui-sans-serif','system-ui'],
+                    'serif': ['ui-serif','Georgia'],
+                    'mono': ['ui-monospace','SFMono-Regular'],
+                }
+            }
+        }
+    </script>
+```
+And we can bring more fonts using link and change the first content of the array with the new font we want for sans, serif, or mono.
+
+## Font Size:
+To add the font size or add the fond size there is a class called text and then the size. There are a list of sizes that can be used. Here is the list: xs, sm, base, lg, xl, 2-9xl. These are in the order. This is how to apply them:
+```
+<p class="text-lg">This is text</p>
+```
+
+## Font Weight:
+To apply font weight we just have to simply use font hyphen and type of weight, these are the types: light, normal, medium, semibold, bold. This is how we can apply:
+```
+<p class="font-semibold">This is some text</p>
+```
+
+## Letter Spacing
+There are only three classes for letter spacing, to apply we have to use class called tracking-(type of spacing), the types are, tight, normal, and wide. Here is how you apply it:-
+```
+<p class="tracking-wide">Some random text</p>
+```
+
+## Text Alignment:
+We have basically three classes to set the alignment, left, center, and right, to apply this we have to preceed with text then hyphgen and the type. Here is how to apply this:
+```
+<p class="text-left">Some random value</p>
+<p class="text-center">Some random value</p>
+<p class="text-right">Some random value</p>
+```
+
+## Text Decoration, style, and offset
+To set the decoration there are 4 decorations, underline, overline, line-through, and no-underline. And adding a style on these decoration, we use decoration class with type of decoration like name of the color and the shade, or if we want to make decoration look differenet there are 5 more styles: solid, double, dotted, dashed, and wavy. We can also give the decoration thickness, with number ranging from 0-8. We can also change the offset of the undeline by using the underline-offset class and adding the number ranging from 0-8. Here are the examples of all of them:-
+```
+<div class="underline decoration-4 decoration-blue-400">Some Text</div>
+    <div class="underline decoration-dotted">Some Text</div>
+    <div class="underline decoration-double">Some Text</div>
+    <div class="underline decoration-dashed">Some Text</div>
+    <div class="underline decoration-4 decoration-blue-400 underline-offset-4">Some Text</div>
+```
+
+## Text transforr:
+In this we have four class or properties, uppercase, lowercase, normal-case, and capitalize to change the text occurence. Here is the example:
+```
+  <p class="uppercase">This is all uppercase</p>    
+    <p class="normal-case">This is all normal</p>
+    <p class="lowercase">This is all LOWECASE</p>
+    <p class="capitalize">this is all capitalize</p>
+```
