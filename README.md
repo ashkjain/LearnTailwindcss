@@ -35,3 +35,22 @@ Same goes for outline we can declare the class to create an outline and then dec
 ```
 <button class="outline outline-blue-300">Submit Me</button>
 ```
+
+## Box Shadow COlors, default value set to 100
+We can also create box shadow on an element, first make sure to declare type of shadow (lg, md, sm) then the color of it with depth. Here is the example:
+```
+<button class="shadow-lg bg-cyan-500 shadow-purple-500/60">Subscribe</button>
+```
+And the slash and the number means the opacity which is set to 100.
+
+## Accent Colors
+We can use accent color and we just need to type accent and then the color name and the shade of the color. Here is the example:
+```
+<input type="checkbox" class="accent-purple-500">
+```
+
+## Arbitrary Colors
+We can also add arbitrary color or several colors, and it could be RGB, color names, or the hex value. To do that we have to specify what type like bg, shadow, text, and them hyphen and square brackets contains that color code. Here is the example:
+```
+<div class="bg-[cyan]">Hello</div>
+```
