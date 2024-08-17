@@ -70,3 +70,12 @@ So space between the x-axis is used something like flexbox or the navbar, to sep
 
 ## Space Between Y
 Same goes for Space between Y as space between x, just the x is swapped with Y. So it would look something like this: `space-y-4`.
+
+# Typography:
+## Font Family:
+There are basically three main font family that we can use using tailwindcss but we can also create our custom configuration for those. Lets see default first, these three are default:
+```
+<div class="font-sans">Tailwind is Awesome</div>
+<div class="font-serif">Tailwind is Awesome</div>
+<div class="font-mono">Tailwind is Awesome</div>
+```
