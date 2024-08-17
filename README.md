@@ -54,3 +54,19 @@ We can also add arbitrary color or several colors, and it could be RGB, color na
 ```
 <div class="bg-[cyan]">Hello</div>
 ```
+
+# Container and Spacing
+## Container
+To declare a container we have to specify a class called `container` which has various breakpoints.
+
+## Margin
+THere are also some margin pre-defined classes, first and foremost `mx-auto` and `my-auto` can put margin auto based on the axis. X: Left and Right, and Y: Top and Bottom. To define the margin on all side we use `m-{number}`, so lets say we want 8px margin on every side we will do something like this: `m-2`. If we want margin on right, left, bottom, or top, we will just add the first letter of the side with 'm'. Lets see an example for margin right 4px: `mr-1`. So the unit 1 = 0.25 rem or 4px. And when then increase it increase in the multplication. So 4 would be 1rem or 16px. The limit of these number are 0.5 to 96. We can also provide it an arbitrary value in square brackets something like number of pixels.
+
+## Padding
+Padding is same as Margin values, instead of `m` it will just be `p`. So padding right 1rem or 16px would be `pr-4`.
+
+## Space Between X
+So space between the x-axis is used something like flexbox or the navbar, to seperate the content on the x-axis we use space between x. To apply this we simply say, for example space between x 1rem : `space-x-4`.
+
+## Space Between Y
+Same goes for Space between Y as space between x, just the x is swapped with Y. So it would look something like this: `space-y-4`.
