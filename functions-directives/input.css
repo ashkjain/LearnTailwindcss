@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* This is to make base tailwind classes applied without directly interacting with html */
+@layer base{
+    h1{
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    /* Or */
+    h1{
+        @apply text-3xl;
+    }
+    #para{
+        @apply text-blue-300
+    }
+}
+/* THis is to create componenets like button and custom stuff */
+@layer components{
+    .btn-blue{
+        @apply bg-blue-500 py-2 px-4 rounded-xl font-bold hover:bg-blue-700 text-white ml-2;
+    }
+}
+.content-area{
+    @apply bg-green-200;
+    /* Importing the customized value as a key from tailwind.config.js */
+    height: theme('spacing.128')
+}
+/* Using media query and apply tailwindcss classes */
+@media screen(xl)
+{
+    body{
+        @apply bg-black text-white
+    }
+}
